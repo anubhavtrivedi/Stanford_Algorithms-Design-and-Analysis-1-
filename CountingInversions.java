@@ -6,7 +6,7 @@ class CountingInversions {
 	public static void main (String[] args) {
 	    int inversions=0;
 	   
-	    int[] arr={6,5,4,3,2,1};
+	    int[] arr={10,9,8,7,6,5,4,3,2,1};
 	    inversions=countInversions(arr);
 	    
 		System.out.println(inversions);
@@ -43,7 +43,7 @@ class CountingInversions {
 	            i++;k++;
 	        }
 	        else{
-	            splitInversions++;
+	            splitInversions+=a.length-i;
 	            x[k]=b[j];
 	            j++;k++;
 	        }
